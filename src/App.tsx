@@ -1,5 +1,8 @@
-import { createGlobalStyle } from "styled-components";
+import { useRecoilState, useSetRecoilState } from "recoil";
+import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
+import { isDarkAtom } from "./atom";
 import Router from "./Router";
+import { darkMode, lightMode } from "./theme";
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
@@ -60,12 +63,39 @@ const GlobalStyle = createGlobalStyle`
     color:inherit;
   }
 `;
+const ToggleBtn = styled.div`
+  position: absolute;
+  top: 20px;
+  right: 250px;
+  width: 80px;
+  height: 40px;
+  border: 0;
+  border-radius: 25px;
+  color: ${(props) => props.theme.HeadBtnColor};
+  background-color: ${(props) => props.theme.btnColor};
+  text-align: center;
+  font-weight: 600;
+  padding-top: 12px;
+  z-index: 1;
+  &:hover {
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 1px 1px 30px 1px rgb(143, 135, 135);
+  }
+`;
 
 function App() {
+  const [isDark, setIsDark] = useRecoilState(isDarkAtom);
+  const toggleMode = () => {
+    setIsDark((prev) => !prev);
+  };
   return (
     <>
-      <Router/>
-      <GlobalStyle/>
+      <ToggleBtn onClick={toggleMode}>{isDark ? "Light" : "Dark"}</ToggleBtn>
+      <ThemeProvider theme={isDark ? lightMode : darkMode}>
+        <Router />
+        <GlobalStyle />
+      </ThemeProvider>
     </>
   );
 }
