@@ -13,14 +13,14 @@ const Logo = styled.span`
   font-size: 24px;
   font-weight: 600;
   margin-left: 10%;
-  color: ${(props) => props.theme.textColor};
+  color: ${(props) => props.theme.HeadBtnColor};
   &:hover {
     color: red;
   }
 `;
 
 const TryBtn = styled(Logo)`
-  color: ${(props) => props.theme.textColor};
+  color: ${(props) => props.theme.HeadBtnColor};
   margin-left: 0;
   margin-right: 10%;
 `;

@@ -2,32 +2,32 @@ import Header from "../components/Header";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const Container = styled.div`
+export const Container = styled.div`
   width: 100%;
   height: 90vh;
   background-color: ${(props) => props.theme.bgColor};
 `;
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   width: 60%;
   height: 90vh;
   margin: 0 auto;
   background-color: ${(props) => props.theme.HomeBodyColor};
 `;
 
-const Body = styled.div`
+export const Body = styled.div`
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 30px rgb(0 0 0/ 30%);
   height: 100%;
 `;
 
-const BannerSection = styled.div`
+export const BannerSection = styled.div`
   height: 10%;
   position: relative;
 `;
 
-const Banner = styled.span`
+export const Banner = styled.span`
   position: absolute;
   color: black;
   font-size: 18px;
@@ -107,7 +107,7 @@ function Home() {
             </ContentSection>
             <ButtonSection>
               <StartDiv>
-                <Link to="/">테스트하기</Link>
+                <Link to="/quiz">테스트하기</Link>
               </StartDiv>
             </ButtonSection>
           </Body>
