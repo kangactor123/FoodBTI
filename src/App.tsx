@@ -63,16 +63,17 @@ const GlobalStyle = createGlobalStyle`
     color:inherit;
   }
 `;
-const ToggleBtn = styled.div`
+const ToggleBtn = styled.div<{ isDark: boolean }>`
   position: absolute;
-  top: 20px;
-  right: 250px;
+  top: 15px;
+  left: 250px;
   width: 80px;
   height: 40px;
   border: 0;
   border-radius: 25px;
-  color: ${(props) => props.theme.HeadBtnColor};
-  background-color: ${(props) => props.theme.btnColor};
+  color: ${(props) => (props.isDark ? "black" : "white")};
+  /* color: ${(props) => props.theme.HeadBtnColor}; */
+  background-color: ${(props) => (props.isDark ? "whitesmoke" : "#2d3436")};
   text-align: center;
   font-weight: 600;
   padding-top: 12px;
@@ -91,7 +92,9 @@ function App() {
   };
   return (
     <>
-      <ToggleBtn onClick={toggleMode}>{isDark ? "Light" : "Dark"}</ToggleBtn>
+      <ToggleBtn isDark={isDark} onClick={toggleMode}>
+        {isDark ? "Light" : "Dark"}
+      </ToggleBtn>
       <ThemeProvider theme={isDark ? lightMode : darkMode}>
         <Router />
         <GlobalStyle />
