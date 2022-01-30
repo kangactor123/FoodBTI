@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/FoodBTI/static/js/main.1c75c895.chunk.js",
-    "main.js.map": "/FoodBTI/static/js/main.1c75c895.chunk.js.map",
+    "main.js": "/FoodBTI/static/js/main.6d623e96.chunk.js",
+    "main.js.map": "/FoodBTI/static/js/main.6d623e96.chunk.js.map",
     "runtime-main.js": "/FoodBTI/static/js/runtime-main.f56311dd.js",
     "runtime-main.js.map": "/FoodBTI/static/js/runtime-main.f56311dd.js.map",
-    "static/js/2.3180a534.chunk.js": "/FoodBTI/static/js/2.3180a534.chunk.js",
-    "static/js/2.3180a534.chunk.js.map": "/FoodBTI/static/js/2.3180a534.chunk.js.map",
+    "static/js/2.edbb1600.chunk.js": "/FoodBTI/static/js/2.edbb1600.chunk.js",
+    "static/js/2.edbb1600.chunk.js.map": "/FoodBTI/static/js/2.edbb1600.chunk.js.map",
     "index.html": "/FoodBTI/index.html",
-    "static/js/2.3180a534.chunk.js.LICENSE.txt": "/FoodBTI/static/js/2.3180a534.chunk.js.LICENSE.txt"
+    "static/js/2.edbb1600.chunk.js.LICENSE.txt": "/FoodBTI/static/js/2.edbb1600.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f56311dd.js",
-    "static/js/2.3180a534.chunk.js",
-    "static/js/main.1c75c895.chunk.js"
+    "static/js/2.edbb1600.chunk.js",
+    "static/js/main.6d623e96.chunk.js"
   ]
 }
