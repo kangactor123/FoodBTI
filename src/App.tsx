@@ -1,4 +1,4 @@
-import { useRecoilState, useSetRecoilState } from "recoil";
+import { useRecoilState } from "recoil";
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
 import { isDarkAtom } from "./atom";
 import Router from "./Router";
@@ -66,7 +66,7 @@ const GlobalStyle = createGlobalStyle`
 const ToggleBtn = styled.div<{ isDark: boolean }>`
   position: absolute;
   top: 15px;
-  left: 250px;
+  right: 20%;
   width: 80px;
   height: 40px;
   border: 0;

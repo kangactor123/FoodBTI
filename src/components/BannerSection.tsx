@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useRecoilValue } from "recoil";
 import styled from "styled-components";
 import { page } from "../atom";
@@ -21,10 +20,9 @@ export const Banner = styled.span`
 
 function BannerSection() {
   const paging = useRecoilValue(page);
-  console.log(`BannerSection Randering`);
   return (
     <Section>
-      <Banner>{paging == 0 ? "EatDa 이 달의 컨텐츠!" : `${paging}/8`}</Banner>
+      <Banner>{paging === 0 ? "EatDa 이 달의 컨텐츠!" : `${paging}/16`}</Banner>
     </Section>
   );
 }

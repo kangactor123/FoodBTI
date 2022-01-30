@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
 import { useRecoilValue } from "recoil";
 import styled from "styled-components";
 import { page } from "../atom";
 import BannerSection from "./BannerSection";
 import ButtonSection from "./ButtonSection";
 import ContentSection from "./ContentSection";
+import ResultSection from "./ResultSection";
 
 export const Box = styled.div`
   width: 60%;
@@ -26,13 +26,15 @@ function Wrapper() {
   return (
     <Box>
       <Body>
-        {paging < 9 ? (
+        {paging < 17 ? (
           <>
             <BannerSection />
             <ContentSection />
             <ButtonSection />
           </>
-        ) : null}
+        ) : (
+          <ResultSection />
+        )}
       </Body>
     </Box>
   );

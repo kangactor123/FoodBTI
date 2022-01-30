@@ -13,6 +13,7 @@ const Button = styled.button<{ BtnColor: string }>`
   border: 0;
   border-radius: 30px;
   font-size: 18px;
+  user-select: none;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   &:hover {

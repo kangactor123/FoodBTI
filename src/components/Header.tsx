@@ -1,19 +1,24 @@
 import { useSetRecoilState } from "recoil";
 import styled from "styled-components";
-import { page } from "../atom";
+import { MBTI, page } from "../atom";
 
 const Wrapper = styled.div`
   height: 10vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: ${(props) => props.theme.headerColor};
 `;
 
+const Box = styled.div`
+  width: 60%;
+  margin: 0 auto;
+`;
+
 const Logo = styled.span`
+  margin-left: 3%;
   font-size: 24px;
   font-weight: 600;
-  margin-left: 10%;
   color: ${(props) => props.theme.HeadBtnColor};
   &:hover {
     cursor: pointer;
@@ -23,12 +28,16 @@ const Logo = styled.span`
 
 function Header() {
   const setPaging = useSetRecoilState(page);
+  const setMbti = useSetRecoilState(MBTI);
   const replay = () => {
     setPaging(0);
+    setMbti("");
   };
   return (
     <Wrapper>
-      <Logo onClick={replay}>EatDa</Logo>
+      <Box>
+        <Logo onClick={replay}>EatDa</Logo>
+      </Box>
     </Wrapper>
   );
 }
