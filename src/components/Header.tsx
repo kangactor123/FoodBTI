@@ -4,6 +4,7 @@ import { MBTI, page } from "../atom";
 
 const Wrapper = styled.div`
   height: 10vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +20,7 @@ const Logo = styled.span`
   margin-left: 3%;
   font-size: 24px;
   font-weight: 600;
+  user-select: none;
   color: ${(props) => props.theme.HeadBtnColor};
   &:hover {
     cursor: pointer;

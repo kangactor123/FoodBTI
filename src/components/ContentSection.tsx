@@ -1,8 +1,9 @@
+import { motion } from "framer-motion";
 import { useRecoilValue } from "recoil";
 import styled, { keyframes } from "styled-components";
 import { page } from "../atom";
 
-const Section = styled.div`
+const Section = styled(motion.div)`
   height: 60%;
   display: flex;
   flex-direction: column;
@@ -25,7 +26,7 @@ const smoothAppear = keyframes`
   }
 `;
 
-export const Contents = styled.div<IContents>`
+export const Contents = styled(motion.div)<IContents>`
   @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Song+Myung&display=swap");
   width: 70%;
   margin: 0 auto;

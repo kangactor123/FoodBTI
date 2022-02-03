@@ -19,3 +19,8 @@ export const MBTI = atom({
   key: "mbti",
   default: "",
 });
+
+export const Showing = atom({
+  key: "showing",
+  default: false,
+});
