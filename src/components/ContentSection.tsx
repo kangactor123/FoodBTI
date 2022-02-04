@@ -36,7 +36,7 @@ export const Contents = styled(motion.div)<IContents>`
   align-items: center;
   line-height: 50px;
   margin-bottom: ${(props) => (props.marginBottom ? props.marginBottom : 0)};
-  font-size: 1.3rem;
+  font-size: 1.6vw;
   font-weight: 600;
   letter-spacing: 1px;
   color: rgb(143, 135, 135);
@@ -44,7 +44,7 @@ export const Contents = styled(motion.div)<IContents>`
   font-family: "Song Myung", serif;
   user-select: none;
   span {
-    font-size: 36px;
+    font-size: 4vw;
     margin-right: 10px;
   }
   animation: ${smoothAppear} 1.5s;

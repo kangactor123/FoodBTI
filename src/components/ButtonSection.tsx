@@ -18,7 +18,7 @@ const StartDiv = styled.div`
   height: 60px;
   border-radius: 30px;
   color: white;
-  font-size: 24px;
+  font-size: 1.7vw;
   text-align: center;
   padding-top: 17px;
   user-select: none;
