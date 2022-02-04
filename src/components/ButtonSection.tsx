@@ -1,6 +1,6 @@
 import { useRecoilState, useSetRecoilState } from "recoil";
 import styled from "styled-components";
-import { Count, MBTI, page } from "../atom";
+import { Count, MBTI, page, Showing } from "../atom";
 import ReplyButton from "./ReplyButton";
 
 const Section = styled.div`
@@ -18,7 +18,7 @@ const StartDiv = styled.div`
   height: 60px;
   border-radius: 30px;
   color: white;
-  font-size: 24px;
+  font-size: 1.7vw;
   text-align: center;
   padding-top: 17px;
   user-select: none;
@@ -34,6 +34,8 @@ function ButtonSection() {
   const [paging, setPaging] = useRecoilState(page);
   const [count, setCount] = useRecoilState(Count);
   const setMbti = useSetRecoilState(MBTI);
+  const [showing, setShowing] = useRecoilState(Showing);
+
   const startQuiz = () => {
     if (paging === 0) {
       setPaging(1);
@@ -94,6 +96,8 @@ function ButtonSection() {
     if (paging < 17) {
       countValue(paging, value);
       setPaging((prev) => prev + 1);
+      setShowing((prev) => !prev);
+      console.log(showing);
     }
   };
   return (

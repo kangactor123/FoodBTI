@@ -12,7 +12,7 @@ const Button = styled.button<{ BtnColor: string }>`
   background-color: ${(props) => props.BtnColor};
   border: 0;
   border-radius: 30px;
-  font-size: 18px;
+  font-size: 1.4vw;
   user-select: none;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -20,7 +20,7 @@ const Button = styled.button<{ BtnColor: string }>`
     cursor: pointer;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
       rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-    font-size: 22px;
+    font-size: 1.8vw;
     color: white;
     transition: box-shadow 1s ease-in;
     transition: font-size 0.1s;

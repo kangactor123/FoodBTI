@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import styled from "styled-components";
 import Wrapper from "../components/Wrapper";
+import Helmet from "react-helmet";
 
 export const Container = styled.div`
   width: 100%;
@@ -14,6 +15,9 @@ export const Container = styled.div`
 function Home() {
   return (
     <>
+      <Helmet>
+        <header>FoodBTI Test</header>
+      </Helmet>
       <Header />
       <Container>
         <Wrapper />

@@ -1,8 +1,9 @@
+import { motion } from "framer-motion";
 import { useRecoilValue } from "recoil";
 import styled, { keyframes } from "styled-components";
 import { page } from "../atom";
 
-const Section = styled.div`
+const Section = styled(motion.div)`
   height: 60%;
   display: flex;
   flex-direction: column;
@@ -25,7 +26,7 @@ const smoothAppear = keyframes`
   }
 `;
 
-export const Contents = styled.div<IContents>`
+export const Contents = styled(motion.div)<IContents>`
   @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Song+Myung&display=swap");
   width: 70%;
   margin: 0 auto;
@@ -35,7 +36,7 @@ export const Contents = styled.div<IContents>`
   align-items: center;
   line-height: 50px;
   margin-bottom: ${(props) => (props.marginBottom ? props.marginBottom : 0)};
-  font-size: 1.3rem;
+  font-size: 1.6vw;
   font-weight: 600;
   letter-spacing: 1px;
   color: rgb(143, 135, 135);
@@ -43,7 +44,7 @@ export const Contents = styled.div<IContents>`
   font-family: "Song Myung", serif;
   user-select: none;
   span {
-    font-size: 36px;
+    font-size: 4vw;
     margin-right: 10px;
   }
   animation: ${smoothAppear} 1.5s;

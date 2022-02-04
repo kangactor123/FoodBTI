@@ -42,35 +42,35 @@ const LoadingMsg = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 50%;
-  font-size: 1.5rem;
+  font-size: 1.8vw;
   font-weight: 400;
   letter-spacing: 1px;
   user-select: none;
   span {
     margin-right: 10px;
-    font-size: 36px;
+    font-size: 2vw;
   }
 `;
 
 const MBTIContent = styled(Contents)`
   margin-top: 1%;
   height: 15%;
-  font-size: 1.2em;
+  font-size: 1.2vw;
   span {
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 1.6vw;
     margin: 0 10px 0 10px;
-    color: #2d3436;
+    color: ${(props) => props.theme.textColor};
   }
 `;
 const DescContent = styled(Contents)`
-  font-size: 1em;
+  font-size: 1vw;
 `;
 
 const ImgWrapper = styled.div`
   box-shadow: 1px 1px 30px 1px rgb(143, 135, 135);
-  width: 60%;
-  height: 48%;
+  width: 40vw;
+  height: 40vh;
   border-radius: 25px;
   margin: 0 auto;
 `;
