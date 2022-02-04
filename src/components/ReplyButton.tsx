@@ -7,8 +7,8 @@ interface IReplyBtn {
 }
 
 const Button = styled.button<{ BtnColor: string }>`
-  width: 60%;
-  height: 60px;
+  width: 40vw;
+  height: 8vh;
   background-color: ${(props) => props.BtnColor};
   border: 0;
   border-radius: 30px;

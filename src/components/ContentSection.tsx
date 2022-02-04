@@ -36,7 +36,7 @@ export const Contents = styled(motion.div)<IContents>`
   align-items: center;
   line-height: 50px;
   margin-bottom: ${(props) => (props.marginBottom ? props.marginBottom : 0)};
-  font-size: 1.6vw;
+  font-size: 2vw;
   font-weight: 600;
   letter-spacing: 1px;
   color: rgb(143, 135, 135);
