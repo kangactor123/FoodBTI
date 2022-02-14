@@ -10,7 +10,7 @@ export const Section = styled.div`
 export const Banner = styled.span`
   position: absolute;
   color: black;
-  font-size: 1.8vw;
+  font-size: 1.2rem;
   font-weight: 600;
   top: 40px;
   right: 70px;

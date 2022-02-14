@@ -15,9 +15,6 @@ export const Container = styled.div`
 function Home() {
   return (
     <>
-      <Helmet>
-        <header>FoodBTI Test</header>
-      </Helmet>
       <Header />
       <Container>
         <Wrapper />
