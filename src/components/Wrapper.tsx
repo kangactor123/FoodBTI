@@ -9,16 +9,16 @@ import ContentSection from "./ContentSection";
 import ResultSection from "./ResultSection";
 
 export const Box = styled(motion.div)`
-  width: 65vw;
+  max-width: 650px;
   height: 90vh;
   margin: 0 auto;
   background-color: ${(props) => props.theme.HomeBodyColor};
+  box-shadow: 0 0 30px rgb(0 0 0/ 30%);
 `;
 
 export const Body = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 30px rgb(0 0 0/ 30%);
   height: 100%;
 `;
 
@@ -33,34 +33,20 @@ function Wrapper() {
     }
   }, [showing]);
 
-  const boxVariants = {
-    initial: {
-      scale: 0,
-      opacity: 0,
-    },
-    animate: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        type: "tween",
-      },
-    },
-  };
-
   return (
     <AnimatePresence>
-      <Box variants={boxVariants} initial="initial" animate="animate">
-        <Body>
-          {paging < 17 ? (
-            <>
-              <BannerSection />
-              <ContentSection />
-              <ButtonSection />
-            </>
-          ) : (
+      <Box>
+        {paging < 17 ? (
+          <Body>
+            <BannerSection />
+            <ContentSection />
+            <ButtonSection />
+          </Body>
+        ) : (
+          <Body>
             <ResultSection />
-          )}
-        </Body>
+          </Body>
+        )}
       </Box>
     </AnimatePresence>
   );

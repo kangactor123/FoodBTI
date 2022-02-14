@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./routes/Home";
 
