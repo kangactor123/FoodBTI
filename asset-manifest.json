@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/FoodBTI/static/js/main.63c211b9.chunk.js",
-    "main.js.map": "/FoodBTI/static/js/main.63c211b9.chunk.js.map",
+    "main.js": "/FoodBTI/static/js/main.9aa14384.chunk.js",
+    "main.js.map": "/FoodBTI/static/js/main.9aa14384.chunk.js.map",
     "runtime-main.js": "/FoodBTI/static/js/runtime-main.f56311dd.js",
     "runtime-main.js.map": "/FoodBTI/static/js/runtime-main.f56311dd.js.map",
     "static/js/2.ee6e561d.chunk.js": "/FoodBTI/static/js/2.ee6e561d.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.f56311dd.js",
     "static/js/2.ee6e561d.chunk.js",
-    "static/js/main.63c211b9.chunk.js"
+    "static/js/main.9aa14384.chunk.js"
   ]
 }
